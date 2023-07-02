@@ -2,15 +2,18 @@
 
 This is a simple chat application built using the Django framework. It allows users to register, log in, and chat with each other in real-time.
 
-![ChatApp Screenshot]()
+![ChatApp Screenshot](https://github.com/amitesh554/Chatapp/assets/72072954/5366e6e7-4353-482c-9742-6fa0744fa45a)
 
-## Features
+## Features!
+
 
 - User registration: Users can create a new account by providing their email address and password.
 - User authentication: Users can log in to the application using their registered email address and password.
 - Real-time chat: Users can send and receive messages in real-time with other logged-in users.
 - User profiles: Each user has a profile that displays their username and profile picture.
 - Room management APIs: APIs are provided to create, update, and delete rooms in the app.
+
+![Screenshot (76)](https://github.com/amitesh554/Chatapp/assets/72072954/fa26be38-9076-40d8-8c81-4bebcc25a0d1)
 
 ## Prerequisites
 
@@ -71,6 +74,8 @@ The following APIs are available for managing rooms in the app:
 
 - `GET /api/rooms/`: Get a list of all rooms.
 - `GET /api/rooms/{room_id}/`: Get details of a specific room.
+
+
 
 ## Contributing
 
