@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
-
+import os
 from pathlib import Path
 
 
@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-6+f+66x8@reyr$e1-00!*1$*)1m=!cp9bks)^_n#2^u0nm1i2q
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -129,7 +129,7 @@ STATIC_URL = 'static/'
 MEDIA_URL= '/images/'
 
 STATICFILES_DIRS=[
-    BASE_DIR / 'static'
+    os.path.join(BASE_DIR, "static")
 ]
 
 MEDIA_ROOT= BASE_DIR / 'static/images'
@@ -140,3 +140,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 CORS_ALLOW_ALL_ORIGINS=True
+
+STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')
