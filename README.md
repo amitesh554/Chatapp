@@ -2,6 +2,8 @@
 
 This is a simple chat application built using the Django framework. It allows users to register, log in, and chat with each other in real-time.
 
+![ChatApp Screenshot]()
+
 ## Features
 
 - User registration: Users can create a new account by providing their email address and password.
