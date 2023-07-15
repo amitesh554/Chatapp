@@ -25,7 +25,11 @@
             </form>
             <div class="mobile-menuItems">
               <a class="btn btn--main btn--pill" href="{% url 'topics_page' %}">Browse Topics</a>
+              {% if request.user.is_authenticated %}
               <a class="btn btn--main btn--pill" href="{% url 'activity_page' %}">Recent Activities</a>
+              {% else %}
+              <a class="btn btn--main btn--pill" href="{% url 'login' %}">Recent Activities</a>
+              {% endif %}
             </div>
           </div>
           <div class="roomList__header">
