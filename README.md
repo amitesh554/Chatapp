@@ -21,7 +21,7 @@ Make sure you have the following installed on your system:
 
 - Python 3
 - Django
-- HTML,CSS,JavaScript
+- HTML,CSS,JavaScript,SQLlite
 - Django REST Framework
 
 
